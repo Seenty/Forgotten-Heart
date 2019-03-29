@@ -1,0 +1,23 @@
+############################################## Imports #################################################################
+from tkinter import *
+############################################## Fonctions ##############################################################
+accueil = Tk()
+accueil.geometry("1700x950+0+0")
+accueil.title("Forgoten Heart")
+tex1 = Label (accueil, text="Forgotten Heart", font=("ComicSansMS",90), fg="gold",borderwidth =10 , relief="groove")
+tex1.pack()
+Play = Button (accueil, text= "Jouer", command= accueil.destroy)
+Play.pack()
+accueil.mainloop()
+Welcome= Tk()
+Welcome.geometry ("1700x950+0+0")
+Welcome.title("Forgotten Heart")
+Name=input("Welcome, Choose a name and start playing :")
+tex2a = Label (Welcome, text="Welcome, ", font=("ComicSansMS",20), fg="Black",borderwidth =10)
+tex2a.pack()
+tex2b = Label (Welcome, text=Name, font=("ComicSansMS",20), fg="Gold",borderwidth =10)
+tex2b.pack()
+tex2c = Label (Welcome, text="Are you ready for this adventure ?", font=("ComicSansMS",20), fg="Black",borderwidth =10)
+tex2c.pack()
+Ready = Button (Welcome, text= "I am ready", command = Welcome.destroy)
+Welcome.mainloop()
